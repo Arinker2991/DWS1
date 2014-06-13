@@ -1,23 +1,24 @@
 * {
 	margin:0; padding:0;
 }
-/*The colors chosen were meant to pay tribute to the colors used by the late "Ultimate" Warrior */
+/*The Body uses a red background, a blue box shadow, and a red line boarder*/
 body{
-    background: url('../images/rampage.gif') repeat center ;
+    background:rgba(175, 13, 13, 1);
     line-height:2;
     text-indent:0.625em;
     margin-left:auto;
     margin-right:auto;
-    border: 0.313em double lime;
+    border: 0.313em double rgba(255,0,0,1);
     border-radius: 0.938em;
-    box-shadow:0 0 3.125em 1.250em darkorange;
+    box-shadow:0 0 3.125em 1.250em hsla(253, 74%, 37%, 1);
     width:95%;
 
 
 }
+/*The styles for the links in various states*/
 a:link {
     text-decoration:none;
-    color: white;
+    color: rgb(204,0,0);
 }
 a:visited {
     text-decoration:none;
@@ -30,81 +31,88 @@ a:hover {
 a:active {
     text-decoration:underline;
 }
-
+/*h1 utilizes the web font, 'Lobster'*/
 h1{
-    background-color:darkorange;
-    color:hsla(0, 0%, 100%, 1);
-    font:italic bold 2.5em "ceviche one";
+    background-color:rgb(255,255,255);
+    color:rgba(175, 13, 13, 1);
+    font:italic bold 2.5em 'Lobster';
     text-transform:uppercase;
-    text-shadow:0.313em 0.313em 0.625em lime;
+    text-shadow:0.313em 0.313em 0.625em rgba(0,0,153,1);
     border-top-left-radius:0.938em;
     border-top-right-radius:0.938em;
 }
 h2{
-    color:hsla(0, 0%, 100%, 1);
+    color:rgba(175, 13, 13, 1);
     font:italic 1.75em "ceviche one";
     letter-spacing:0.063em;
-    text-shadow:0.313em 0.313em 0.625em lime;
+    text-shadow:0.313em 0.313em 0.625em rgb(0,0,153);
     height:64px;
-    background: darkorange url('../images/icon.png') no-repeat center ;
+    background:rgba(255,255,255,.95);
 }
 h3{
 
-    color:hsla(0, 0%, 100%, 1);
+    color:rgba(175, 13, 13, 1);
     font:italic 1.5em "ceviche one";
     letter-spacing:0.063em;
-    text-shadow:0.313em 0.313em 0.625em lime;
+    text-shadow:0.313em 0.313em 0.625em rgb(0,0,153);
     height:64px;
-    background: darkorange url('../images/icon.png') no-repeat center ;
+    background:rgba(255,255,255,.95);
 }
 h4{
     height:64px;
-    background: darkorange url('../images/icon.png') no-repeat center ;
+    background:rgba(255,255,255,.95);
     color:hsla(0, 0%, 100%, 1);
     font:italic bold 1.25em;
     letter-spacing:0.063em;
-    text-shadow: 0.313em 0.313em 0.625em lime;
+    text-shadow: 0.313em 0.313em 0.625em rgb(0,0,153);
     display:block;
 }
 p{
 
-    background-color:#E80C93;
-    color:rgb(0,0,0);
+    background-color:rgb(255,255,255);
+    color:rgba(0,0,102,1);
     font-size:1.0em;
     font-family:"georgia", serif;
 
 }
 ul{
 
-    background-color:rgba(17,217,0,.95);
+    background-color:rgba(255,255,255,.75);
     color:rgb(0,0,100);
     width:99.3%;
     padding:0;
-    border:0.313em dotted lime;
+    border:0.313em dotted rgba(175, 13, 13, 1);
     margin:0;
     list-style:inside circle;
 
 }
-p.column{
-    -moz-column-count: 3;
-    -moz-column-gap: 1.875em;
-    -webkit-column-count: 3;
-    -webkit-column-gap : 1.875em;
-    -moz-column-rule-color:  #ccc;
-    -moz-column-rule-style:  solid;
-    -moz-column-rule-width:  0.063em;
-    -webkit-column-rule-color:  #ccc;
-    -webkit-column-rule-style: solid ;
-    -webkit-column-rule-width:  0.063em;
-    width:96.4%;
-    column-count:3;
-    float:none;
-    padding:1.563em;
-    column-gap: 6.250em;
-    column-rule-color:  #ccc;
-    column-rule-style: solid ;
-    column-rule-width:  0.063em;
-    margin: 0.313em 0.313em 0.313em 0.313em;
-    clear:both;
-    background:linear-gradient(lime,deepskyblue);
+ol{
+
+    background-color:rgba(255,255,255,.75);
+    color:rgb(0,0,100);
+	text-indent:0.8em;
+    width:99.3%;
+    padding:0.2em;
+    border:0.313em dotted rgba(175, 13, 13, 1);
+    margin:0.31em;
+
+}
+/*The block quote and figure are both centered, in order to draw attention to them.*/
+blockquote{
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	color:rgba(175, 13, 13, 1);
+	text-align:center;
+	background-color:rgba(255,255,255,1);
+	padding-bottom:.09em;
+	padding-top:.09em;
+}
+figure{
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	color:rgba(175, 13, 13, 1);
+	text-align:center;
+	background-color:rgba(255,255,255,1);	
 }
