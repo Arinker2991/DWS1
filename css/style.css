@@ -3,7 +3,6 @@
 }
 /*The Body uses a red background, a blue box shadow, and a red line boarder*/
 body{
-    background:rgba(175, 13, 13, 1);
     line-height:2;
     text-indent:0.625em;
     margin-left:auto;
@@ -12,13 +11,15 @@ body{
     border-radius: 0.938em;
     box-shadow:0 0 3.125em 1.250em hsla(253, 74%, 37%, 1);
     width:95%;
+	background-image:url('../images/subliminal.gif');
+	
 
 
 }
 /*The styles for the links in various states*/
 a:link {
     text-decoration:none;
-    color: rgb(204,0,0);
+    color: rgb(0,0,0);
 }
 a:visited {
     text-decoration:none;
@@ -57,6 +58,7 @@ h3{
     text-shadow:0.313em 0.313em 0.625em rgb(0,0,153);
     height:64px;
     background:rgba(255,255,255,.95);
+	clear:both;
 }
 h4{
     height:64px;
@@ -77,7 +79,14 @@ p{
 }
 ul{
 
-    background-color:rgba(255,255,255,.75);
+    background: #efc5ca;
+	background: -moz-linear-gradient(top,  #efc5ca 0%, #d24b5a 19%, #ba2737 76%, #f18e99 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efc5ca), color-stop(19%,#d24b5a), color-stop(76%,#ba2737), color-stop(100%,#f18e99));
+	background: -webkit-linear-gradient(top,  #efc5ca 0%,#d24b5a 19%,#ba2737 76%,#f18e99 100%);
+	background: -o-linear-gradient(top,  #efc5ca 0%,#d24b5a 19%,#ba2737 76%,#f18e99 100%);
+	background: -ms-linear-gradient(top,  #efc5ca 0%,#d24b5a 19%,#ba2737 76%,#f18e99 100%);
+	background: linear-gradient(to bottom,  #efc5ca 0%,#d24b5a 19%,#ba2737 76%,#f18e99 100%);
+	filter:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=0 );
     color:rgb(0,0,100);
     width:99.3%;
     padding:0;
@@ -89,12 +98,16 @@ ul{
 ol{
 
     background-color:rgba(255,255,255,.75);
+	background-image:url('../images/baseball.png');
+	background-repeat:no-repeat;
+	background-position:right;
     color:rgb(0,0,100);
 	text-indent:0.8em;
     width:99.3%;
     padding:0.2em;
     border:0.313em dotted rgba(175, 13, 13, 1);
     margin:0.31em;
+	clear:both;
 
 }
 /*The block quote and figure are both centered, in order to draw attention to them.*/
@@ -111,8 +124,16 @@ blockquote{
 figure{
 	margin-left:auto;
 	margin-right:auto;
-	width:100%;
+	width:45%;
 	color:rgba(175, 13, 13, 1);
 	text-align:center;
-	background-color:rgba(255,255,255,1);	
+	background-color:rgba(255,255,255,1);
+	float:right;
+	padding-bottom:8px;
+		
+}
+div{
+	float:left;
+	width:55%;
+	height:inherit;
 }
