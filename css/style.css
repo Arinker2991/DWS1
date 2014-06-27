@@ -137,3 +137,44 @@ div{
 	width:55%;
 	height:inherit;
 }
+table{
+	background-color:rgba(175, 13, 13, 1);
+    color:rgba(255,255,255,1);
+    font-size:1.0em;
+    font-family:"georgia", serif;
+	width:50%;
+	padding:10px;
+	border:0.313em dotted rgba(255, 255, 255, 1);
+	text-align:center;
+	text-transform:capitalize;
+	border-spacing:2px;
+	margin-left:auto;
+	margin-right:auto;
+}
+tr:hover{
+	text-decoration:underline;
+    color: #CCC;
+}
+form{
+		background-color:rgba(175, 13, 13, 1);
+    color:rgba(255,255,255,1);
+    font-size:1.0em;
+    font-family:"georgia", serif;
+	width:25%;
+	padding:10px;
+	border:0.313em solid rgba(255, 255, 255, 1);
+	text-align:left;
+	text-transform:capitalize;
+	border-spacing:2px;
+	float:left;
+}
+input:hover{
+	text-decoration:underline;
+    color: #00F;
+}
+input:focus{
+	text-decoration:blink;
+    color: #000;
+}
+
+
